@@ -60,13 +60,12 @@ $(document).ready(function () {
 
     function exitAppPopup() {
         alert("exitapp");
-       navigator.notification.confirm('Exit PhoneGap ' + device.cordova + ' Demo?'
-       // confirm('Exit PhoneGap' + device.cordova + 'Demo?'
+       //navigator.notification.confirm('Exit PhoneGap ' + device.cordova + ' Demo?'
+        confirm('Exit PhoneGap' + device.cordova + 'Demo?'
         , function (button) {
             if (button == 2) {
                 alert("button");
                 navigator.app.exitApp();
-
             }
         }
 , 'Exit'
